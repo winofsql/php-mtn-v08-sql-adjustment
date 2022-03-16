@@ -96,7 +96,7 @@ function check(){
                 required
                 size="50"
                 maxlength="50"
-                pattern="[ 一-\u9FA5]+" 
+                pattern="[ 　一-\u9FA5|ァ-ンヴー|ぁ-んー]+"
                 <?= $readonly_2 ?>
                 type="text"
                 name="sname"
@@ -111,6 +111,7 @@ function check(){
             <input class="form-control data"
                 size="50"
                 maxlength="50"
+                pattern="[ 　ァ-ンヴー]+"
                 <?= $readonly_2 ?>
                 type="text"
                 name="fname"
