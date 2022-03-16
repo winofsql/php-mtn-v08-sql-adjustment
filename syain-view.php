@@ -19,7 +19,7 @@ $(function(){
     // 氏名～生年月日
     $(".data").on("keypress", function(e){
         if ( e.keyCode == 13 ) {
-            var target = $(this).parent().parent().nextAll(".body").eq(0);
+            var target = $(this).parents(".body").nextAll(".body").eq(0);
             if ( target.length == 0 ) {
                 $("#sname")
                     .focus()
